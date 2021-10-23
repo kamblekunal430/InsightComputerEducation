@@ -1,7 +1,7 @@
 .footer {
-  background-color: rgb(53, 50, 50);
+  background-color: #1b1c1e;
   color: white;
   height: max-content;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
