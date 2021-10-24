@@ -9,6 +9,7 @@ import { MkclComponent } from './mkcl/mkcl.component';
 import { FooterComponent } from './footer/footer.component';
 import { InfoComponent } from './info/info.component';
 import { ContactComponent } from './contact/contact.component';
+import { SlideComponent } from './slide/slide.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
     FooterComponent,
     InfoComponent,
     ContactComponent,
+    SlideComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
