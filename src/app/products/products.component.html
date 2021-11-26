@@ -3,43 +3,18 @@
   <div><h2>Enroll now for the courses</h2></div>
   <hr />
   <br />
-  <div class="row m-3">
-    <div class="col m-3">
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasBottom"
-        aria-controls="offcanvasBottom"
-      >
+  <div class="row m-auto align-items-center justify-content-around">
+    <div class="col-md-3 m-3" *ngFor="let url of links; let i = index">
+      <a href="{{ url }}" target="_blank">
         <img
-          src="assets/ms.jpg"
+          src="assets/p{{ i + 1 }}.jpg"
           style="width: 12rem; height: 10rem"
           class="border rounded"
         />
-      </button>
-
-      <div
-        class="offcanvas offcanvas-bottom"
-        tabindex="-1"
-        id="offcanvasBottom"
-        aria-labelledby="offcanvasBottomLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">
-            Offcanvas bottom
-          </h5>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body small">...</div>
-      </div>
+      </a>
     </div>
-    <div class="col m-3">
+  </div>
+  <!-- <div class="col m-3">
       <img
         src="assets/tly.jpg"
         style="width: 12rem; height: 10rem"
@@ -99,5 +74,5 @@
         class="border rounded"
       />
     </div>
-  </div>
+  </div> -->
 </div>
